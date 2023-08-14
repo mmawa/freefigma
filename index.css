@@ -1,0 +1,33 @@
+/* white bg color to the top navigation */
+.navigationbar {
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navigationbar a {
+  color: #808080;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* for logo */
+.circle {
+  border-radius: 50%;
+  vertical-align: middle;
+  
+  margin-right: 5px;
+}
+
+/* Change the color of links on hover */
+.navigationbar a:hover {
+  color: purple;
+}
+
+/* Add a color to the active/current link */
+.navigationbar a.active {
+  color: black;
+  margin-right: 10%;
+}
