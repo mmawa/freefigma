@@ -96,4 +96,46 @@
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   transform: scale(1.1);
+  background-color: lightblue;
 }
+
+/* 9. web design */
+.web_design {
+    display: flex;
+    flex-direction: row; /* Display cards horizontally */
+    justify-content: space-between; /* Distribute space between cards */
+  }
+
+.card {
+    flex: 1;
+    border: 1px solid #ccc;
+    size: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+  }
+  
+.card:hover {
+  max-width: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
+  background-color: lightblue;
+}
+
+.new_button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color:#e60073;
+    border-radius: 20px; 
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 150px;
+  }
+
+.new_button:hover {
+    transform: scale(1.1);
+    color: #ff33a0;
+  }
