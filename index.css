@@ -109,7 +109,7 @@
 .card {
     flex: 1;
     border: 1px solid #ccc;
-    size: 50%;
+    width: 200px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -125,17 +125,59 @@
   background-color: lightblue;
 }
 
-.new_button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color:#e60073;
-    border-radius: 20px; 
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    width: 150px;
-  }
+.centered-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+}
 
-.new_button:hover {
-    transform: scale(1.1);
-    color: #ff33a0;
-  }
+/* Styling for the lines */
+.lines {
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+
+.left-line,
+.right-line {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 45%;
+    height: 0.75px;
+    top: 45%;
+    background: grey;
+}
+
+.left-line {
+    left: 0;
+}
+
+.right-line {
+    right: 0;
+}
+
+/* Styling for the button */
+button {
+    padding: 15px 35px;
+    background-color: #3498db;
+    display: block;
+    margin: auto;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button {
+  background-color: white; 
+  color: deeppink; 
+  border: 1px solid grey;
+}
+
+button:hover {
+  background-color: deeppink;
+  color: white;
+}
