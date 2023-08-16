@@ -177,9 +177,37 @@ button:hover {
 
 
 /* footer */
+body, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
-    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E0E0E0;
+    justify-content: space-between;
     color: black;
     text-align: left;
-    padding: 10px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 100px;
 }
+
+ul {
+  list-style: none;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    color: black;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: black;
+}
+
+
