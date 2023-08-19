@@ -50,12 +50,14 @@
 
   .content {
     float: left;
-    width: 100%;
+    width: 380px;
     text-decoration: none; 
   }
 
   .image {
     float: right;
+    width: 70%;
+    height: 60%;
     position: static;
   }
 
